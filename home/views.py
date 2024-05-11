@@ -5,10 +5,11 @@ from django.shortcuts import render, HttpResponse
 
 def index(request):
     context = {
-        'variable': "this is variable comming from outside"
+        'variable1': "Hello I am Utkarsh",
+        "variable2": "This is an example of variable2"
     }
     # return HttpResponse("this is homepage")
-    return render(request, 'index.html')
+    return render(request, 'index.html', context)
 
 
 def about(request):
