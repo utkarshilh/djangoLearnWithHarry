@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# for changing the name of administration inside the database
+admin.site.site_header = "Utkarsh Book Strore Admin"
+admin.site.site_title = "Utkarsh Book Store Admin Portal"
+admin.site.index_title = "Welcome to Utkarsh Book Store"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
