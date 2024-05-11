@@ -1,11 +1,6 @@
-<html>
-  <head>
-    <title>template</title>
-  </head>
+{% extends 'base.html' %} 
+{% block body %} 
 
-  <body>
-    <h1>This is really very cool</h1>
-    <p>this is the value of variable1 : <b> {{variable1}} </b></p>
-    <p>This is the value of variable2 : <b> {{variable2}} </b></p>
-  </body>
-</html>
+{%block title %} Home {% endblock title%}
+this is my body Utkarsh 
+{% endblock body %}
