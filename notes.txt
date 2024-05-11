@@ -1,0 +1,3 @@
+Static files : these are the files that anyone can access using url  all the other files is processed first and then sent to the user using it 
+
+             
