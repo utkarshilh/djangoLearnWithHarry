@@ -4,21 +4,15 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    context = {
-        'variable1': "Hello I am Utkarsh",
-        "variable2": "This is an example of variable2"
-    }
     # return HttpResponse("this is homepage")
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 
-def about(request):
-    return HttpResponse("this is about page")
-
+def aboutus(request):
+    return render(request, 'about.html')
 
 def services(request):
-    return HttpResponse("this is services page")
+    return render(request, 'services.html')
 
-
-def contacts(request):
-    return HttpResponse("this is contact page")
+def contactus(request):
+    return render(request, 'contactus.html')
