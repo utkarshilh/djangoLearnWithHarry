@@ -1,3 +1,14 @@
 Static files : these are the files that anyone can access using url  all the other files is processed first and then sent to the user using it 
+Model : the that defines your database
 
+
+1. Register model on admin.py of app
+2. Register app
+     copy name from app and ( home(app ka naam).app.(cpied name) inside installed app of setting.py of app )
+
+
+migerations : VO FILE GENERATE KARNA JO IS CHANGE KO STORE KARTI HAI
+
+makemigeration : create changes and store in a files
+migeration : apply the pending changes int the map creacted by map migerations
              
